@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azul Cargo Express - Transporte Aéreo de Carga Rápido e Confiável</title>
+    <meta name="description" content="Transporte aéreo de carga para todo o Brasil. Carga expressa, próximo voo e modelo econômico. Conecte seu negócio a mais de 5.000 cidades.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="https://via.placeholder.com/150x40/1E3A8A/FFFFFF?text=Azul+Cargo" alt="Azul Cargo Express" class="logo">
+                </div>
+                <div class="nav-menu">
+                    <a href="#servicos" class="nav-link">Serviços</a>
+                    <a href="#vantagens" class="nav-link">Vantagens</a>
+                    <a href="#sobre" class="nav-link">Sobre</a>
+                    <a href="#contato" class="nav-link">Contato</a>
+                </div>
+                <div class="nav-cta">
+                    <div class="phone-number">
+                        <i class="fab fa-whatsapp"></i>
+                        <span>(11) 4003-6399</span>
+                    </div>
+                    <button class="btn btn-primary" onclick="scrollToContact()">Solicitar Cotação</button>
+                </div>
+                <div class="mobile-menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-background">
+            <div class="hero-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Transporte Aéreo de Carga 
+                        <span class="highlight">Rápido e Confiável</span> 
+                        para Todo o Brasil
+                    </h1>
+                    <p class="hero-subtitle">
+                        Conecte seu negócio a mais de 5.000 cidades brasileiras com a agilidade e segurança que sua empresa merece
+                    </p>
+                    <p class="hero-description">
+                        Na Azul Cargo Express, entendemos que cada envio é crucial para o sucesso do seu negócio. Oferecemos soluções de transporte aéreo personalizadas desde cargas expressas até modelos econômicos, garantindo que seus produtos cheguem ao destino no prazo certo e com total segurança.
+                    </p>
+                    <div class="hero-cta">
+                        <button class="btn btn-primary btn-large" onclick="openWhatsApp()">
+                            <i class="fab fa-whatsapp"></i>
+                            Solicitar Cotação WhatsApp
+                        </button>
+                        <button class="btn btn-secondary btn-large" onclick="scrollToCalculator()">
+                            <i class="fas fa-calculator"></i>
+                            Calcular Frete
+                        </button>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">5.000+</span>
+                            <span class="stat-label">Cidades Atendidas</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">98.5%</span>
+                            <span class="stat-label">Entregas no Prazo</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Atendimento</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="airplane-container">
+                        <i class="fas fa-plane airplane-icon"></i>
+                        <div class="flight-path"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicos" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossos Serviços de Transporte Aéreo</h2>
+                <p class="section-subtitle">Soluções personalizadas para cada necessidade do seu negócio</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3 class="service-title">Carga Expressa</h3>
+                    <p class="service-subtitle">Velocidade Máxima</p>
+                    <p class="service-description">
+                        Quando cada hora conta, nossa modalidade Carga Expressa garante que seus produtos sejam embarcados na próxima aeronave disponível.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Entrega em até 24h para principais capitais</li>
+                        <li><i class="fas fa-check"></i> Prioridade no embarque e desembarque</li>
+                        <li><i class="fas fa-check"></i> Rastreamento em tempo real</li>
+                        <li><i class="fas fa-check"></i> Manuseio especializado</li>
+                    </ul>
+                    <div class="service-ideal">
+                        <strong>Ideal para:</strong> E-commerce, produtos perecíveis, documentos urgentes
+                    </div>
+                    <button class="btn btn-outline" onclick="openWhatsApp('Carga Expressa')">Solicitar Cotação</button>
+                </div>
+
+                <div class="service-card featured">
+                    <div class="service-badge">Mais Popular</div>
+                    <div class="service-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3 class="service-title">Próximo Voo</h3>
+                    <p class="service-subtitle">Flexibilidade e Eficiência</p>
+                    <p class="service-description">
+                        O equilíbrio perfeito entre rapidez e custo-benefício. Suas cargas são embarcadas na próxima aeronave com espaço disponível.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Embarque em até 48 horas</li>
+                        <li><i class="fas fa-check"></i> Ótima relação custo-benefício</li>
+                        <li><i class="fas fa-check"></i> Flexibilidade de horários</li>
+                        <li><i class="fas fa-check"></i> Cobertura nacional completa</li>
+                    </ul>
+                    <div class="service-ideal">
+                        <strong>Ideal para:</strong> Reposição de estoque, cargas com prazo intermediário
+                    </div>
+                    <button class="btn btn-primary" onclick="openWhatsApp('Próximo Voo')">Solicitar Cotação</button>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <h3 class="service-title">Modelo Econômico</h3>
+                    <p class="service-subtitle">Máximo Custo-Benefício</p>
+                    <p class="service-description">
+                        Para cargas que não têm urgência extrema, oferecemos tarifas competitivas através da consolidação inteligente de cargas.
+                    </p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Tarifas mais acessíveis</li>
+                        <li><i class="fas fa-check"></i> Consolidação otimizada de cargas</li>
+                        <li><i class="fas fa-check"></i> Prazo de 3 a 5 dias úteis</li>
+                        <li><i class="fas fa-check"></i> Mesmo padrão de segurança</li>
+                    </ul>
+                    <div class="service-ideal">
+                        <strong>Ideal para:</strong> Grandes volumes, cargas programadas
+                    </div>
+                    <button class="btn btn-outline" onclick="openWhatsApp('Modelo Econômico')">Solicitar Cotação</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages Section -->
+    <section id="vantagens" class="advantages">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Por que escolher a Azul Cargo Express?</h2>
+                <p class="section-subtitle">Vantagens que fazem a diferença no seu negócio</p>
+            </div>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3 class="advantage-title">Cobertura Nacional</h3>
+                    <p class="advantage-description">
+                        Mais de 5.000 cidades atendidas em todo território nacional. Nossa infraestrutura robusta conecta seu negócio a oportunidades em todo o Brasil.
+                    </p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-microchip"></i>
+                    </div>
+                    <h3 class="advantage-title">Tecnologia Avançada</h3>
+                    <p class="advantage-description">
+                        Rastreamento GPS em tempo real, notificações automáticas e portal do cliente personalizado para total controle dos seus envios.
+                    </p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="advantage-title">Equipe Especializada</h3>
+                    <p class="advantage-description">
+                        Profissionais experientes e atendimento personalizado 24/7. Consultores especializados por segmento para melhor atendimento.
+                    </p>
+                </div>
+                <div class="advantage-card">
+                    <div class="advantage-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3 class="advantage-title">Segurança Total</h3>
+                    <p class="advantage-description">
+                        Seguro automático incluso, protocolos rigorosos de manuseio e rastreabilidade completa para total tranquilidade.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Audience Section -->
+    <section id="sobre" class="target-audience">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Soluções Personalizadas para seu Negócio</h2>
+                <p class="section-subtitle">Atendemos diferentes segmentos com expertise especializada</p>
+            </div>
+            <div class="audience-grid">
+                <div class="audience-card">
+                    <div class="audience-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3 class="audience-title">E-commerce e Lojas Virtuais</h3>
+                    <p class="audience-description">
+                        Soluções específicas para lojas virtuais que precisam entregar rapidamente e manter custos competitivos.
+                    </p>
+                    <ul class="audience-features">
+                        <li><i class="fas fa-check"></i> Integração com plataformas de e-commerce</li>
+                        <li><i class="fas fa-check"></i> Prazos competitivos para aumentar conversões</li>
+                        <li><i class="fas fa-check"></i> Suporte para picos de demanda</li>
+                        <li><i class="fas fa-check"></i> Logística reversa para trocas</li>
+                    </ul>
+                    <div class="audience-testimonial">
+                        <p>"Aumentamos em 40% as vendas para fora do estado"</p>
+                        <span>- Loja de Eletrônicos SP</span>
+                    </div>
+                </div>
+                <div class="audience-card">
+                    <div class="audience-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3 class="audience-title">Empresas B2B</h3>
+                    <p class="audience-description">
+                        Soluções corporativas personalizadas para empresas que vendem para outras empresas.
+                    </p>
+                    <ul class="audience-features">
+                        <li><i class="fas fa-check"></i> Contratos personalizados</li>
+                        <li><i class="fas fa-check"></i> Gestor de conta dedicado</li>
+                        <li><i class="fas fa-check"></i> Relatórios executivos mensais</li>
+                        <li><i class="fas fa-check"></i> Integração com sistemas ERP</li>
+                    </ul>
+                    <div class="audience-testimonial">
+                        <p>"100% dos prazos cumpridos em 2 anos de parceria"</p>
+                        <span>- TechParts Distribuidora</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="contact-title">Pronto para Revolucionar sua Logística?</h2>
+                    <p class="contact-subtitle">
+                        Junte-se a milhares de empresas que já confiam na Azul Cargo Express para conectar seus negócios a todo o Brasil
+                    </p>
+                    <p class="contact-description">
+                        Nossa equipe de especialistas está pronta para criar uma solução personalizada que vai acelerar suas entregas, reduzir custos e aumentar a satisfação dos seus clientes.
+                    </p>
+                    <div class="contact-guarantees">
+                        <div class="guarantee">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Resposta em até 2 horas</span>
+                        </div>
+                        <div class="guarantee">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Consultoria gratuita</span>
+                        </div>
+                        <div class="guarantee">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Cotação sem compromisso</span>
+                        </div>
+                        <div class="guarantee">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Desconto especial para novos clientes</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <h3 class="form-title">Solicite sua Cotação</h3>
+                        <div class="form-group">
+                            <label for="empresa">Nome da Empresa</label>
+                            <input type="text" id="empresa" name="empresa" placeholder="Ex: Loja Virtual ABC Ltda" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="responsavel">Nome do Responsável</label>
+                            <input type="text" id="responsavel" name="responsavel" placeholder="Seu nome completo" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="telefone">Telefone/WhatsApp</label>
+                                <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">E-mail Corporativo</label>
+                                <input type="email" id="email" name="email" placeholder="contato@suaempresa.com.br" required>
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="tipoCarga">Tipo de Carga</label>
+                                <select id="tipoCarga" name="tipoCarga" required>
+                                    <option value="">Selecione o tipo</option>
+                                    <option value="eletronicos">Eletrônicos</option>
+                                    <option value="roupas">Roupas e Acessórios</option>
+                                    <option value="documentos">Documentos</option>
+                                    <option value="farmaceuticos">Produtos Farmacêuticos</option>
+                                    <option value="automotivos">Peças Automotivas</option>
+                                    <option value="outros">Outros</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="volumeMensal">Volume Mensal</label>
+                                <select id="volumeMensal" name="volumeMensal" required>
+                                    <option value="">Selecione o volume</option>
+                                    <option value="1-50">1 a 50 envios</option>
+                                    <option value="51-200">51 a 200 envios</option>
+                                    <option value="201-500">201 a 500 envios</option>
+                                    <option value="500+">Mais de 500 envios</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="destinos">Principais Destinos</label>
+                            <input type="text" id="destinos" name="destinos" placeholder="Estados ou regiões de maior demanda">
+                        </div>
+                        <div class="form-group">
+                            <label for="observacoes">Observações</label>
+                            <textarea id="observacoes" name="observacoes" placeholder="Conte-nos sobre suas necessidades específicas" rows="3"></textarea>
+                        </div>
+                        <div class="form-buttons">
+                            <button type="button" class="btn btn-whatsapp" onclick="sendWhatsAppForm()">
+                                <i class="fab fa-whatsapp"></i>
+                                Enviar via WhatsApp
+                            </button>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-phone"></i>
+                                Solicitar Ligação
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <img src="https://via.placeholder.com/150x40/FFFFFF/1E3A8A?text=Azul+Cargo" alt="Azul Cargo Express" class="footer-logo">
+                    <p class="footer-description">
+                        Conectando seu negócio a todo o Brasil com rapidez, segurança e eficiência.
+                    </p>
+                    <div class="footer-social">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Serviços</h4>
+                    <ul class="footer-links">
+                        <li><a href="#servicos">Carga Expressa</a></li>
+                        <li><a href="#servicos">Próximo Voo</a></li>
+                        <li><a href="#servicos">Modelo Econômico</a></li>
+                        <li><a href="#contato">Rastreamento</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Empresa</h4>
+                    <ul class="footer-links">
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#vantagens">Nossas Vantagens</a></li>
+                        <li><a href="#contato">Trabalhe Conosco</a></li>
+                        <li><a href="#contato">Imprensa</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-title">Contato</h4>
+                    <div class="footer-contact">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>(11) 4003-6399</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fab fa-whatsapp"></i>
+                            <span>(11) 99999-9999</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>contato@azulcargoexpress.com.br</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Azul Cargo Express. Todos os direitos reservados.</p>
+                <div class="footer-legal">
+                    <a href="#">Política de Privacidade</a>
+                    <a href="#">Termos de Uso</a>
+                    <a href="#">Condições Gerais</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Float Button -->
+    <div class="whatsapp-float" onclick="openWhatsApp()">
+        <i class="fab fa-whatsapp"></i>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
